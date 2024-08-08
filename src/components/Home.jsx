@@ -1,5 +1,3 @@
-import profileImage from "./image/profile.jpg";
-
 export default function Home() {
   return (
      <>
@@ -16,8 +14,8 @@ export default function Home() {
           </div>
           <div className="hero-content">
             <img
-              src= {profileImage}
-              alt="A Hndsome Guy"
+              src= "image/profile.jpg"
+              alt="A Handsome Guy"
               className="profile-image"
             />
             <h1 className="name" >Rohan Ghorpade</h1>

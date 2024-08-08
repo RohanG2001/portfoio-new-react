@@ -4,6 +4,8 @@ import About from "./components/about";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Projects from "./components/projects";
+import Footer from "./components/Footer";
+import GoToTopButton from "./components/GoToTopButton";
 
 
 function App() {
@@ -16,7 +18,8 @@ function App() {
       <Projects />
       <Skills />
       <Contact />
-      
+      <Footer />
+      <GoToTopButton />
     </>
   )
 }

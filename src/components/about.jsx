@@ -1,6 +1,4 @@
 
-import pg22 from "./image/pg22.jpg";  // Adjust this path if necessary
-
 export default function About() {
   return (
     <div className="content">
@@ -15,14 +13,14 @@ export default function About() {
         <div className="about-grid">
           <div className="about-image" data-aos="flip-left" data-aos-delay="50">
             <img
-              src={pg22}
+              src="image/pg22.jpg"
               alt="Rohan Ghorpade working"
               className="profile-image2"
             />
           </div>
           <div className="about-text">
             <p data-aos="fade-up" data-aos-delay="100">
-              Hello! I&aposm Rohan Ghorpade, a passionate frontend developer, crafting responsive and user-friendly web
+              Hello! I&apos;m Rohan Ghorpade, a passionate frontend developer, crafting responsive and user-friendly web
               applications. My journey in web development began with a
               fascination for creating visually appealing and intuitive user
               interfaces.
@@ -36,7 +34,7 @@ export default function About() {
               <li>Performance optimization</li>
             </ul>
             <p data-aos="fade-up" data-aos-delay="250">
-              When I&aposm not coding, you can find me exploring new web
+              When I&apos;m not coding, you can find me exploring new web
               technologies, contributing to open-source projects, or
               enjoying a good cup of coffee while solving coding challenges.
             </p>
