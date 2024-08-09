@@ -3,15 +3,6 @@ export default function Home() {
      <>
      <div className="content">
      <section id="home" className="hero-section">
-          <div className="hero-background">
-            <div className="dev-shape"></div>
-            <div className="dev-shape"></div>
-            <div className="dev-shape"></div>
-            <div className="dev-shape"></div>
-            <div className="dev-shape"></div>
-            <div className="dev-shape"></div>
-            <div className="dev-shape"></div>
-          </div>
           <div className="hero-content">
             <img
               src= "image/profile.jpg"

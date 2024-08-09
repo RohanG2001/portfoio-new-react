@@ -1,64 +1,53 @@
 export default function Skills() {
+  const frontendSkills = [
+    { name: "HTML5", level: 90 },
+    { name: "CSS3", level: 85 },
+    { name: "JavaScript", level: 80 },
+    { name: "React.js", level: 75 },
+    { name: "TypeScript", level: 70 }
+  ];
+
+  const otherSkills = [
+    { name: "Git", level: 85 },
+    { name: "Responsive Design", level: 90 },
+    { name: "Photoshop", level: 65 }
+  ];
+
   return (
-    <>
-       <div className="content">
-       <section id="skills" className="skills-section">
-          <div className="skills-content">
-            <div className="hero-background">
-              <div className="dev-shape"></div>
-              {/* <!-- Code Bracket --> */}
-              <div className="dev-shape"></div>
-              {/* <!-- Screen/Monitor --> */}
-              <div className="dev-shape"></div>
-              {/* <!-- Gear --> */}
-              <div className="dev-shape"></div>
-              {/* <!-- Database --> */}
-              <div className="dev-shape"></div>
-              {/* <!-- Responsive Design (Phone) --> */}
-              <div className="dev-shape"></div>
-              {/* <!-- Cloud --> */}
-              <div className="dev-shape"></div>
+    <div className="content">
+      <section id="skills" className="skills-section">
+        <div className="skills-content">
+          <h2 className="section-title" data-aos="fade-up">My Skills</h2>
+          <div className="skills-container">
+            <div className="skill-category" data-aos="fade-up-right">
+              <h3 className="category-title">Frontend</h3>
+              <ul className="skills-list">
+                {frontendSkills.map((skill, index) => (
+                  <li key={index} className="skill-item" data-aos="fade-up-right" data-aos-delay={index * 100}>
+                    <span className="skill-name">{skill.name}</span>
+                    <div className="skill-bar">
+                      <div className="skill-level" style={{width: `${skill.level}%`}}></div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <h2 className="section-title" data-aos="fade-up">My Skills</h2>
-            <div className="skills-container">
-              <div className="skill-category" data-aos="fade-up-right">
-                <h3 className="category-title">Frontend</h3>
-                <ul className="skills-list">
-                  <li className="skill-item" data-aos="fade-up-right">
-                    <span className="skill-name">HTML5</span>
+            <div className="skill-category" data-aos="fade-up-left">
+              <h3 className="category-title">Tools & Others</h3>
+              <ul className="skills-list">
+                {otherSkills.map((skill, index) => (
+                  <li key={index} className="skill-item" data-aos="fade-up-left" data-aos-delay={index * 100}>
+                    <span className="skill-name">{skill.name}</span>
+                    <div className="skill-bar">
+                      <div className="skill-level" style={{width: `${skill.level}%`}}></div>
+                    </div>
                   </li>
-                  <li className="skill-item" data-aos="fade-up-right">
-                    <span className="skill-name">CSS3</span>
-                  </li>
-                  <li className="skill-item" data-aos="fade-up-right">
-                    <span className="skill-name">JavaScript</span>
-                  </li>
-                  <li className="skill-item" data-aos="fade-up-right">
-                    <span className="skill-name">React.js</span>
-                  </li>
-                  <li className="skill-item" data-aos="fade-up-right">
-                    <span className="skill-name">TypeScript</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="skill-category" data-aos="fade-up">
-                <h3 className="category-title">Tools & Others</h3>
-                <ul className="skills-list">
-                  <li className="skill-item" data-aos="fade-up-left">
-                    <span className="skill-name">Git</span>
-                  </li>
-                  <li className="skill-item" data-aos="fade-up-left" data-aos-offset="50">
-                    <span className="skill-name">Responsive Design</span>
-                  </li>
-                  <li className="skill-item" data-aos="fade-up-left" data-aos-offset="50">
-                    <span className="skill-name">Photoshop</span>
-                  </li>
-                </ul>
-              </div>
+                ))}
+              </ul>
             </div>
           </div>
-        </section>
-       </div>
-    </>
-  )
+        </div>
+      </section>
+    </div>
+  );
 }

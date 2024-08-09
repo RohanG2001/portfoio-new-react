@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <>
       
-        <div className="navbar">
+      <div className="navbar">
           <a href="#home">
             <h1 className="first">Rohan G.</h1>
           </a>
@@ -19,7 +19,7 @@ export default function Navbar() {
               <h1 className="profile-name">Rohan G.</h1>
               <p className="profile-role">Frontend Developer</p>
             </div>
-</a>
+        </a>
           <a href="#home" className="nav-item btn-shaketext">
             <Home size={20} style={{marginRight:'10px'}} />
             <span className="nav-text">Home</span>
