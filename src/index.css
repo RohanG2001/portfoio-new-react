@@ -433,7 +433,7 @@ p {
   transform: translate(10px, 10px);
   width: 35px;
   height: 35px;
-  background:#00ffc30d;
+  background:#e2a1a10d;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 50px;
