@@ -17,13 +17,13 @@ export default function Skills() {
     <div className="content">
       <section id="skills" className="skills-section">
         <div className="skills-content">
-          <h2 className="section-title" data-aos="fade-up">My Skills</h2>
+          <h2 className="section-title">My Skills</h2>
           <div className="skills-container">
-            <div className="skill-category" data-aos="fade-up-right">
+            <div className="skill-category">
               <h3 className="category-title">Frontend</h3>
               <ul className="skills-list">
                 {frontendSkills.map((skill, index) => (
-                  <li key={index} className="skill-item" data-aos="fade-up-right" data-aos-delay={index * 100}>
+                  <li key={index} className="skill-item">
                     <span className="skill-name">{skill.name}</span>
                     <div className="skill-bar">
                       <div className="skill-level" style={{width: `${skill.level}%`}}></div>
@@ -32,11 +32,11 @@ export default function Skills() {
                 ))}
               </ul>
             </div>
-            <div className="skill-category" data-aos="fade-up-left">
+            <div className="skill-category">
               <h3 className="category-title">Tools & Others</h3>
               <ul className="skills-list">
                 {otherSkills.map((skill, index) => (
-                  <li key={index} className="skill-item" data-aos="fade-up-left" data-aos-delay={index * 100}>
+                  <li key={index} className="skill-item">
                     <span className="skill-name">{skill.name}</span>
                     <div className="skill-bar">
                       <div className="skill-level" style={{width: `${skill.level}%`}}></div>
