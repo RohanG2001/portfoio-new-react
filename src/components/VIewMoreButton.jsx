@@ -6,7 +6,7 @@ export default function ViewMoreButton() {
 
   return (
     <button className="view-more-button" onClick={handleViewMore}>
-      View More Projects
+      View More Proj.... <i className="fa fa-arrow-right" aria-hidden="true"></i>
     </button>
   );
 }

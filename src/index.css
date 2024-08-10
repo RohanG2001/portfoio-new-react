@@ -1375,7 +1375,7 @@ body {
 .viewmore {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .view-more-button {
