@@ -222,7 +222,7 @@ p {
 }
 
 .sidebar {
-  background-color: #191919;
+  background-color: #121212;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -804,7 +804,7 @@ body {
   max-width: 600px; /* Limit width for larger screens */
   z-index: 1000; /* Ensure it stays on top */
   border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle top border */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); /* Shadow for depth */
 }
 
 @media (min-width: 769px) {
@@ -1306,7 +1306,7 @@ body {
   .project-card:hover {
     transform: translateY(-5px);
     transform: translateX(-20);
-    box-shadow: 1px 1px 5px #00FFC3;
+    /* box-shadow: 1px 1px 5px #00FFC3; */
   }
 
   .project-image img {
@@ -1320,8 +1320,6 @@ body {
     border-width: thin; 
     border-color: rgb(101, 101, 101);
   }
-
-  
 
   .project-info {
     padding: 1.5rem;
@@ -1372,6 +1370,37 @@ body {
 
   .project-link:hover {
     background-color: #34495e;
+}
+
+.viewmore {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.view-more-button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  background-color: #1d4346;
+  color: white;
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(101, 101, 101);
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-more-button:hover {
+  background-color: #34495e;
+  transform: translateY(-2px);
+}
+
+.view-more-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #00FFC3;
 }
 
 @media screen and (max-width: 1024px) {
