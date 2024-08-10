@@ -1365,11 +1365,15 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-size: 0.9rem;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease-in-out;
   }
 
   .project-link:hover {
-    background-color: #34495e;
+    
+    border: solid;
+    border-color: #3498db;
+    border-width: 1px;
+    background-color: #000000;
 }
 
 .viewmore {
@@ -1390,12 +1394,15 @@ body {
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 
 .view-more-button:hover {
-  background-color: #34495e;
-  transform: translateY(-2px);
+  transform: scale(1.1);
+  border: solid;
+  border-width: 1px;
+  border-color: #3498db;
+  background-color: #000;
 }
 
 .view-more-button:focus {
