@@ -8,6 +8,7 @@ import Projects from "./components/projects";
 import Footer from "./components/Footer";
 import GoToTopButton from "./components/GoToTopButton";
 import LoadingScreen from "./components/LoadingScreen"; // Import the LoadingScreen component
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +29,7 @@ function App() {
         <LoadingScreen /> // Show loading screen while loading
       ) : (
         <>
+          <SpeedInsights />
           <Navbar />
           <Home />
           <About />
