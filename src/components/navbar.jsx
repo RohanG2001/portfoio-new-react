@@ -41,7 +41,7 @@ export default function Navbar() {
             <span className="nav-text">Contact</span>
           </a>
           <div className="bottom-buttons">
-            <a href="image/icons/RohanGresume.pdf" className="btn-blur" download style={{ marginBottom: '20px' }}>
+            <a href="image/icons/Rohan-Resume.pdf" className="btn-blur" download style={{ marginBottom: '20px' }}>
               <Download size={20} style={{marginRight:'10px'}} />
               Resume
             </a>
