@@ -5,7 +5,7 @@ export default function Home() {
      <section id="home" className="hero-section">
           <div className="hero-content">
             <img
-              src= "image/profile.jpg"
+              src= "image/don.jpg"
               alt="A Handsome Guy"
               className="profile-image"
             />

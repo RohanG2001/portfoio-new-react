@@ -877,10 +877,14 @@ body {
   padding: 5rem 2rem;
   position: relative;
   overflow: hidden;
-  background: #000;
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  background-color: black;
+  /* background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 60px 60px; */
+  /* animation: gradientBG 15s ease infinite; */
 }
+
 
 @keyframes gradientBG {
   0% {
@@ -1293,6 +1297,11 @@ body {
   }
 
   .project-card {
+    transition: background-color 2s ease-in-out, box-shadow 2s ease-in-out;
+}
+
+
+  .project-card:hover {
     background-color: #121212;
     border-radius: 10px;
     border: solid;
@@ -1300,12 +1309,8 @@ body {
     border-color: rgb(101, 101, 101);
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.8s ease-in-out;
-  }
-
-  .project-card:hover {
-    transform: translateY(-5px);
-    transform: translateX(-20);
+    /* transform: translateY(-5px);
+    transform: translateX(-20); */
     /* box-shadow: 1px 1px 5px #00FFC3; */
   }
 
@@ -1316,6 +1321,10 @@ body {
     height: 200px;
     object-fit: cover;
     transition: 0.3s ease-in-out;
+    
+  }
+
+  .project-image img:hover {
     border: solid;
     border-width: thin; 
     border-color: rgb(101, 101, 101);
